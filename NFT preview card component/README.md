@@ -11,6 +11,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -43,6 +44,10 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
+
+### Useful resources
+
+- [CSS image hover effects](https://codepen.io/nxworld/pen/ZYNOBZ) - This is an amazing article which helped me understand different hover effects on an image. I'd recommend it to anyone still learning this concept.
 
 
 ### What I learned
