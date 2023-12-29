@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; margin-top: 50px;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .container{
+      width: 870px;
+      height: 500px;
+      display: flex;
+      flex-direction: row;
+    }
+    .boxes{
+      width: 290px;
+      height: 500px;
+      padding: 50px;
+    }
+    .boxes:nth-child(1){
+      background-color: hsl(31, 77%, 52%);
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+    .boxes:nth-child(2){
+      background-color: hsl(184, 100%, 22%);
+    }
+    .boxes:nth-child(3){
+      background-color: hsl(179, 100%, 13%);
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+
+    }
+    .title{
+      font-family: 'Big Shoulders Display', sans-serif;
+      font-size: 40px;
+      margin-top: 30px;
+      color: hsl(0, 0%, 95%) ;
+      text-transform: uppercase;
+    }
+    .sub-title{
+      color: hsla(0, 0%, 100%, 0.75);
+      font-family: 'Lexend Deca', sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+      margin-top: 30px;
+      margin-right: -20px;
+    }
+    .learn-more{
+      width: 150px;
+      height: 50px;
+      border: none;
+      background: hsl(0, 0%, 95%);
+      border-radius: 90px;
+      margin-top: 85px;
+      font-family: 'Lexend Deca', sans-serif;
+      font-size: 15px;
+      text-align: center;
+      cursor: pointer;
+    }
+    #btn1{
+      color: hsl(31, 77%, 52%);
+    }
+    #btn2{
+      color: hsl(184, 100%, 22%);
+    }
+    #btn3{
+      color: hsl(179, 100%, 13%);
+    }
+    .learn-more:hover,.learn-more:focus{
+      background-color: transparent;
+      border: 1px solid hsl(0,0%,95%);
+    }
+    #btn1:hover,#btn2:hover,#btn3:hover{
+      color: hsl(0,0%,95%);
+    }
+    @media screen and (max-width: 880px){
+      body{
+        padding: 100px 0px;
+      }
+      .container{
+        width: 290px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .boxes:nth-child(1){
+        background-color: hsl(31, 77%, 52%);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+      }
+      .boxes:nth-child(3){
+        background-color: hsl(179, 100%, 13%);
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+      .attribution {display: none;}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="boxes">
+      <img src="./images/icon-sedans.svg" alt="Sedan Icon">
+      <h2 class="title">Sedans</h2>
+      <p class="sub-title">Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+        or on your next road trip.</p>
+      <button class="learn-more" id="btn1">Learn more</button>
+    </div>
+    <div class="boxes">
+      <img src="./images/icon-suvs.svg" alt="Sedan Icon">
+      <h2 class="title">SUVs</h2>
+      <p class="sub-title"> Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+        and off-road adventures.</p>
+      <button class="learn-more" id="btn2">Learn more</button>
+    </div>
+    <div class="boxes">
+      <img src="./images/icon-luxury.svg" alt="Sedan Icon">
+      <h2 class="title">Luxury</h2>
+      <p class="sub-title">Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+        rental and arrive in style.</p>
+      <button class="learn-more" id="btn3">Learn more</button>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/Konarksharma13">Konark Sharma</a>.
+  </div>
+
+</body>
+</html>
