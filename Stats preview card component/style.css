@@ -99,6 +99,7 @@ body{
         color: white;
     }
     .box{
+        margin-top: 100px;
         height: 750px;
         width: 350px;
         display: flex;
